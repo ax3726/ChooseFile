@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/color15AAFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ly_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:focusableInTouchMode="true"
+
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:paddingLeft="12dp"
+
+                android:paddingRight="12dp"
+                android:src="@drawable/nav_ico_left" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ly_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

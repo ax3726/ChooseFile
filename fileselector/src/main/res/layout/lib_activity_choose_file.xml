@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:background="@color/colorFFFFFF"
+        android:orientation="vertical">
+
+        <choose.lm.com.fileselector.widget.CustomTitleBar
+            android:id="@+id/ctb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            app:tabIndicatorColor="@color/color15AAFF"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/color15AAFF"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="#333333" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorebebeb" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_choose_file"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorebebeb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/id_choose_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="已选0B"
+                android:textColor="@color/color8A8A8A"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/lib_choose_file_send"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="发送(0)"
+                android:textColor="@color/colorC9C9C9"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

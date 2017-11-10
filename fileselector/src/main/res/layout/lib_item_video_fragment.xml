@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgV_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/lib_sl_single_choice"
+            />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:scaleType="centerCrop"
+            android:layout_height="80dp"
+            android:src="@drawable/img_preloading"
+            />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_name"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文件名"
+                android:singleLine="true"
+                android:textColor="@color/color000000"
+
+                />
+            <TextView
+            android:id="@+id/tv_size"
+                android:textSize="13dp"
+                android:textColor="@color/color777777"
+                android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+                android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="文件大小"
+            />
+            <TextView
+                android:id="@+id/tv_time"
+                android:textSize="13dp"
+                android:textColor="@color/color777777"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:text="最后修改时间"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDDDDDD"
+        />
+
+</LinearLayout>
